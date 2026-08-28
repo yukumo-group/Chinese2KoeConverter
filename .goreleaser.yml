@@ -5,5 +5,5 @@ gomod:
 
 release:
   github:
-    owner: 1Vewton
+    owner: yukumo-group
     name: Chinese2KoeConverter
