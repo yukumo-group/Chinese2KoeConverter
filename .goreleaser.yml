@@ -1,0 +1,9 @@
+version: 2
+
+gomod:
+  proxy: true
+
+release:
+  github:
+    owner: 1Vewton
+    name: Chinese2KoeConverter
