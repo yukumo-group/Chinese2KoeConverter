@@ -4,7 +4,7 @@ import (
 	"github.com/go-ego/gpy/phrase"
 )
 
-// DumHeteronymMap dumps map of heternym to the converter
+// DumpHeteronymMap dumps map of heternym to the converter
 func DumpHeteronymMap(
 	heteronymMap map[string]string,
 ) {
