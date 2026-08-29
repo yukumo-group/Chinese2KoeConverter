@@ -19,7 +19,7 @@ jobs:
       run: go mod download
 
     - name: Run tests 
-      run: go test -v ./... -tags=test
+      run: go test -v ./... -tags=test -coverpkg=./pkg/...,./internal/... -coverprofile=coverage.txt
     
     - name: Go Vet
       run: go vet ./...
@@ -29,3 +29,9 @@ jobs:
       
     - name: Run Golint
       run: golint -set_exit_status ./...
+    
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: coverage.txt

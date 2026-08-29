@@ -1,6 +1,8 @@
 package cpyconverter
 
 import (
+	"strings"
+
 	"github.com/go-ego/gpy"
 	"github.com/go-ego/gpy/phrase"
 )
@@ -19,9 +21,11 @@ func ToPinyin(
 	)
 	resultNoTone := []string{}
 	for _, pyWithTone := range resultWithTone {
-		pyWithNoTone := gpy.ToFixed(
-			pyWithTone,
-			arg,
+		pyWithNoTone := strings.TrimSpace(
+			gpy.ToFixed(
+				pyWithTone,
+				arg,
+			),
 		)
 		resultNoTone = append(resultNoTone, pyWithNoTone)
 	}
