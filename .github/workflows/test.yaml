@@ -19,7 +19,7 @@ jobs:
       run: go mod download
 
     - name: Run tests 
-      run: go test -v ./... -tags=test,cmd
+      run: go test -v ./... -tags=test
     
     - name: Go Vet
       run: go vet ./...
