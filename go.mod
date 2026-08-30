@@ -1,4 +1,4 @@
-module github.com/yukumo-group/Chinese2KoeConverter
+module github.com/yukumo-group/Chinese2KanaConverter
 
 go 1.25.0
 

@@ -6,4 +6,4 @@ gomod:
 release:
   github:
     owner: yukumo-group
-    name: Chinese2KoeConverter
+    name: Chinese2KanaConverter

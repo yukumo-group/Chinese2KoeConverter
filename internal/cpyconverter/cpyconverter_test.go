@@ -7,6 +7,7 @@ import (
 
 // TestDumpHeteronymDict tests the dumping of heteronym dict
 func TestDumpHeteronymDict(t *testing.T) {
+	t.Parallel()
 	data := map[string]string{
 		"都会区": "dū huì qū",
 	}
