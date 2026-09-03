@@ -14,12 +14,14 @@ func TestIsChinese(t *testing.T) {
 		"嘴巴，最最最",
 		"嘴巴ab",
 		"〇",
+		"二〇二六",
 	}
 	expectedResult := []bool{
 		false,
 		true,
 		false,
 		false,
+		true,
 		true,
 	}
 	for i, val := range tests {
